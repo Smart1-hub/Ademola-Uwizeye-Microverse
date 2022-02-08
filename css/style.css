@@ -1,3 +1,11 @@
+
+@media only screen and (max-width: 815px) {
+  #navbar{
+    border: 1px solid;
+    height: 207px;
+  }
+}
+
 html,
 body {
   min-width: 290px;
@@ -86,7 +94,6 @@ code {
 }
 
 @media only screen and (max-width: 815px) {
-  /* For mobile phones: */
   #navbar ul {
     border: 1px solid;
     height: 207px;
@@ -125,4 +132,11 @@ code {
     padding-right: 45px;
     min-width: 233px;
   }
+}
+
+
+/* media querries exists */
+
+@media (min-width: 720px) and (max-width: 1119px) {
+  .test { margin-left: 300px; background: #0FF; height: 200px }
 }

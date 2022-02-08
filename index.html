@@ -35,7 +35,16 @@
 
     <p> here </p>
     <li> list </li>
-    <code> code goes here </code>
+    <code> <?php
+      $myObj->name = "John";
+      $myObj->age = 30;
+      $myObj->city = "New York";
+      
+      $myJSON = json_encode($myObj);
+      
+      echo $myJSON;
+      ?> 
+    </code>
     <p> here </p
     <li> one </li>
     <code></code>
@@ -54,7 +63,13 @@
     <header>Javascript and java</header>
     <p> here </p>
     <li> list </li>
-    <code> code goes here </code>
+    <code> const xmlhttp = new XMLHttpRequest();
+      xmlhttp.onload = function() {
+        const myObj = JSON.parse(this.responseText);
+        document.getElementById("demo").innerHTML = myObj.name;
+      }
+      xmlhttp.open("GET", "demo_file.php");
+      xmlhttp.send();</code>
     <p> here </p
   </section>
 
@@ -71,7 +86,15 @@
     <p> here </p>
     <li> list </li>
     <p> here </p
-    <code> code goes here </code>
+    <code>
+      onst xmlhttp = new XMLHttpRequest();
+      xmlhttp.onload = function() {
+        const myObj = JSON.parse(this.responseText);
+        document.getElementById("demo").innerHTML = myObj.name;
+      }
+      xmlhttp.open("GET", "demo_file.php");
+      xmlhttp.send();
+    </code>
     <p> here </p>
   </section>
 </main>
